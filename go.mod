@@ -1,4 +1,4 @@
-module github.com/Woland-prj/microtasks_protos
+module gthub.com/Woland-prj/microtasks_protos
 
 go 1.23.4
 
