@@ -7,6 +7,7 @@ option go_package = "microtasks.sso.v1;ssov1";
 service auth {
   rpc Register (RegisterRequest) returns (RegisterRespones);
   rpc Login (LoginRequest) returns (LoginRespones);
+  rpc Refresh (RefreshRequest) returns (LoginRespones);
 }
 
 message RegisterRequest {
@@ -27,4 +28,8 @@ message LoginRequest {
 message LoginRespones {
   string auth_token = 1; // JWT token
   string refresh_token = 2; // JWT token
+}
+
+message RefreshRequest {
+  string refresh_token = 1; // JWT token
 }
