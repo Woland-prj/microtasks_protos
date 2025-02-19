@@ -32,4 +32,5 @@ message LoginRespones {
 
 message RefreshRequest {
   string refresh_token = 1; // JWT token
+  int64 app_id = 2; // ID of loggining service
 }
